@@ -9,15 +9,15 @@
     <head>
       <h1>MyPoftfolio</h1>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Projects</a></li>
-        <li><a href="">Skills</a></li>
-        <li><a href="">Contact Us</a></li>
+        <li><a href="#section-bio">Home</a></li>
+        <li><a href="#section-projects">Projects</a></li>
+        <li><a href="#section-skills">Skills</a></li>
+        <li><a href="#section-contact-us">Contact Us</a></li>
       </ul>
     </head>
 
     <main>
-      <section>
+      <section id="section-bio">
         <h2>Bio</h2>
         <h3>Rien Isaac <span>Jurado</span></h3>
         <p>
@@ -25,9 +25,12 @@
           rerum provident quam in quia magnam quasi impedit ut iusto, iure
           quidem neque facere itaque molestiae, sit labore expedita! Maiores?
         </p>
+        <div>
+          <button>Download Resume</button>
+        </div>
       </section>
       <!-- section for projects -->
-      <section>
+      <section id="section-projects">
         <h2>Projects</h2>
         <article>
           <h3>Project Name 01</h3>
@@ -60,7 +63,7 @@
         </article>
       </section>
 
-      <section>
+      <section id="section-contact-us">
         <h2>Contact Us</h2>
         <article>
           <ul>
@@ -69,9 +72,22 @@
             <li><a href="">LinkedIn</a></li>
           </ul>
         </article>
+
+        <article>
+          <h3>Email Me</h3>
+          <div>
+            <form>
+              <label for="email">Email</label>
+              <input type="text" id="email" name="email" />
+
+              <label for="message">Message</label>
+              <input type="text" id="message" name="message" />
+            </form>
+          </div>
+        </article>
       </section>
 
-      <section>
+      <section id="section-skills">
         <h2>Skills</h2>
         <article>
           <ul>
@@ -80,10 +96,6 @@
             <li>Python</li>
             <li>Django</li>
             <li>C#</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
           </ul>
         </article>
       </section>
